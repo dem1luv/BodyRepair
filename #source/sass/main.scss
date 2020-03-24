@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+@import "zerostyle";
+@import "slider";
+@import "fonts";
+
+/* common styles */
+body {
+    overflow-x: hidden;
+    font-family: Lato;
+    &.lock {
+        overflow-y: hidden;
+    }
+}
+.container {
+    max-width: 970px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.request-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff !important;
+    width: 240px;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    transition: background-color 0.25s ease,
+    border 0.25s ease;
+    &.f {
+        background-color: #d91233;
+        &:hover {
+            background: none;
+            border: 2px solid #d91233;
+        }
+    }
+    &.e {
+        border: 2px solid #d91233;
+        &:hover {
+            background-color: #d91233;
+            border: none;
+        }
+    }
+}
+.title {
+    
+}
+.text {
+
+}
+/* ------------- */
+
+.home {
+    background: url("../images/home/bg.webp") 50% 50% / cover no-repeat; 
+}
+
+.header {
+    background: linear-gradient(to bottom, #1e1e1e70 0%, rgba(30, 30, 30, 0) 100%);
+    height: 150px;
+    .container {
+        padding: 20px 15px 0 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media(max-width: 508px) {
+            flex-direction: column;
+        }
+    }
+
+    &__left {
+        @media(max-width: 508px) {
+            margin: 0 0 20px 0;
+        }
+    }
+
+    &__logo {
+        color: #5a5a5a;
+        font-size: 30px;
+    }
+
+    &__right {
+        text-align: right;
+        @media(max-width: 508px) {
+            text-align: center;
+        }
+    }
+
+    &__tel {
+        color: #ffffff;
+        font-size: 28px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0 0 6px 0;
+    }
+
+    &__back-call {
+        color: #d91233 !important;
+        font-size: 16px;
+        text-decoration: underline;
+    }
+}
+
+.main {
+    padding: 30px 0 87px 0;
+    color: #ffffff;
+    .container {
+        
+    }
+    &__title {
+        font-size: 48px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0 0 14px 0;
+        text-align: center;
+        @media(max-width: 576px) {
+            font-size: 42px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 30px;
+        text-align: center;
+        margin: 0 0 100px 0;
+    }
+
+    &__pluses {
+        display: flex;
+        justify-content: space-between;
+        max-width: 627px;
+        margin: 0 auto 100px auto;
+        @media(max-width: 534px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: -20px auto 100px auto;
+        }
+    }
+
+    &__plus {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 165px;
+        @media(max-width: 534px) {
+            margin: 20px;
+        }
+    }
+
+    &__plus-image {
+        width: 64px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 27px 0;
+    }
+
+    &__plus-text {
+        max-width: 164px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    &__requests {
+        display: flex;
+        justify-content: space-between;
+        max-width: 520px;
+        margin: 0 auto;
+        @media(max-width: 529px) {
+            margin: -20px auto;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__request {
+        @media(max-width: 529px) {
+            width: 100%;
+            margin: 20px;
+        }
+    }
+
+    &__request-button {
+        margin: 0 0 20px 0;
+        @media(max-width: 529px) {
+            width: 100%;
+        }
+    }
+
+    &__request-text {
+        max-width: 160px;
+        text-align: center;
+        margin: 0 auto;
+        line-height: 21px;
+        @media(max-width: 529px) {
+            max-width: 100%;
+        }
+    }
+}
+
+.features {
+    padding: 80px 0;
+    overflow: hidden;
+    &__list {
+        display: flex;
+        margin: -41px -46px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__item {
+        text-align: center;
+        max-width: 242px;
+        margin: 41px 46px;
+        @media(max-width: 605px) {
+            max-width: 100%;
+        }
+    }
+
+    &__image {
+        display: block;
+        margin: 0 auto 29px auto;
+    }
+
+    &__title {
+        margin: 0 0 15px 0;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
