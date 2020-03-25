@@ -983,3 +983,137 @@ body.lock {
     width: 100%;
   }
 }
+
+.contacts {
+  position: relative;
+  z-index: 0;
+}
+
+.contacts .container {
+  padding: 50px 0 210px 0;
+}
+
+@media (max-width: 767px) {
+  .contacts .container {
+    padding: 40px;
+    background-color: #d91233;
+  }
+}
+
+.contacts__block {
+  padding: 60px;
+  width: 240px;
+  z-index: 1;
+  position: relative;
+  background-color: #d91233;
+  width: 480px;
+  margin: 0 auto;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .contacts__block {
+    position: static;
+    width: 100%;
+    padding: 0 0;
+    margin: 0;
+  }
+}
+
+.contacts__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 40px 0;
+}
+
+.contacts__address {
+  font-size: 20px;
+  margin: 0 0 30px 0;
+}
+
+.contacts__phone {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+}
+
+.contacts__email {
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.contacts__google-map {
+  z-index: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 767px) {
+  .contacts__google-map {
+    position: static;
+    height: 400px;
+  }
+}
+
+.footer {
+  background-color: #fff;
+  padding: 30px 0;
+}
+
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 508px) {
+  .footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 508px) {
+  .footer__left {
+    margin: 0 0 20px 0;
+  }
+}
+
+.footer__logo {
+  color: #5a5a5a;
+  font-size: 30px;
+}
+
+.footer__right {
+  text-align: right;
+}
+
+@media (max-width: 508px) {
+  .footer__right {
+    text-align: center;
+  }
+}
+
+.footer__tel {
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 6px 0;
+}
+
+.footer__back-call {
+  color: #d91233 !important;
+  font-size: 16px;
+  text-decoration: underline;
+}
