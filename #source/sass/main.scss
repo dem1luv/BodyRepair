@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 @import "zerostyle";
-@import "slider";
 @import "fonts";
 
 /* common styles */
@@ -118,9 +117,6 @@ body {
 .main {
     padding: 30px 0 87px 0;
     color: #ffffff;
-    .container {
-        
-    }
     &__title {
         font-size: 48px;
         font-weight: 700;
@@ -704,83 +700,17 @@ body {
         min-height: 45px;
     }
 }
-.popup-thanks {
-    .popup {
-
-		&__title {
-		}
-
-		&__text {
-		}
-
-		&__form {
-		}
-
-		&__input {
-		}
-
-        &__input-name {
-        }
-
-		&__input-email {
-		}
-
-		&__input-tel {
-		}
-
-		&__submit {
-		}
-    }
-}
 .popup-back-call {
     .popup {
-
-		&__title {
-		}
-
 		&__text {
             margin: 0 0 18px 0;
-		}
-
-		&__form {
-		}
-
-		&__input {
-		}
-
-		&__input-email {
-		}
-
-		&__input-tel {
-		}
-
-		&__submit {
-		}
+        }
     }
 }
 .popup-fast-back-call {
     .popup {
-
-		&__title {
-		}
-
 		&__text {
             margin: 0 0 18px 0;
-		}
-
-		&__form {
-		}
-
-		&__input {
-		}
-
-		&__input-email {
-		}
-
-		&__input-tel {
-		}
-
-		&__submit {
-		}
+        }
     }
 }
