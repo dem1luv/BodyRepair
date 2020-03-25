@@ -87,11 +87,103 @@
                 </div>
             </div>
         </div>
+        <div class="request">
+            <div class="container">
+                <h2 class="request__title title">Подробная заявка</h2>
+                <h3 class="request__subtitle subtitle">Заполните форму и получите максимально точную цену!</h3>
+                <form action="#" class="request__form">
+                    <div class="request__col">
+                        <p class="request__name">Марка:</p>
+                        <select name="mark" class="request__select" required>
+                            <option value="" disabled selected>Выберите марку</option>
+                            <option value="mark1">Марка 1</option>
+                            <option value="mark2">Марка 2</option>
+                            <option value="mark3">Марка 3</option>
+                            <option value="mark4">Марка 4</option>
+                            <option value="mark5">Марка 5</option>
+                            <option value="mark6">Марка 6</option>
+                            <option value="mark7">Марка 7</option>
+                            <option value="mark8">Марка 8</option>
+                            <option value="mark9">Марка 9</option>
+                            <option value="mark10">Марка 10</option>
+                        </select>
+                        <p class="request__name">Модель:</p>
+                        <select name="model" class="request__select" required>
+                            <option value="" disabled selected>Выберите модель</option>
+                            <option value="model1">Модель 1</option>
+                            <option value="model2">Модель 2</option>
+                            <option value="model3">Модель 3</option>
+                            <option value="model4">Модель 4</option>
+                            <option value="model5">Модель 5</option>
+                            <option value="model6">Модель 6</option>
+                            <option value="model7">Модель 7</option>
+                            <option value="model8">Модель 8</option>
+                            <option value="model9">Модель 9</option>
+                            <option value="model10">Модель 10</option>
+                        </select>
+                        <p class="request__name">Год выпуска:</p>
+                        <select name="year" class="request__select" required>
+                            <option value="" disabled selected>Выберите год</option>
+                            <option value="year1">Год 1</option>
+                            <option value="year2">Год 2</option>
+                            <option value="year3">Год 3</option>
+                            <option value="year4">Год 4</option>
+                            <option value="year5">Год 5</option>
+                            <option value="year6">Год 6</option>
+                            <option value="year7">Год 7</option>
+                            <option value="year8">Год 8</option>
+                            <option value="year9">Год 9</option>
+                            <option value="year10">Год 10</option>
+                        </select>
+                    </div>
+                    <div class="request__col">
+                        <p class="request__name">Необходимые детали:</p>
+                        <textarea name="details" class="request__textarea" placeholder="Введите" required></textarea>
+                        <p class="request__name">Ваше имя:</p>
+                        <input name="name" type="text" class="request__input" placeholder="Введите" required>
+                    </div>
+                    <div class="request__col">
+                        <p class="request__name">Ваш телефон:</p>
+                        <input name="tel" type="tel" class="request__input request__input-tel" pattern="\+7\s[\(][0-9]{3}[\)]{0,1}\s\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="+7 (___) ___-__-__" required>
+                        <p class="request__name">Ваш e-mail:</p>
+                        <input name="email" type="email" class="request__input" placeholder="Введите" required>
+                        <input type="submit" value="Узнать цену" class="request__submit request-button b">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="stock">
+            <div class="container">
+                <h2 class="stock__title title">Имеем в наличии детали на авто:</h2>
+                <div class="stock__list">
+                    <div class="stock__item"><img src="images/stock/01.webp" alt="01.webp" class="stock__image"></div>
+                    <div class="stock__item"><img src="images/stock/02.webp" alt="02.webp" class="stock__image"></div>
+                    <div class="stock__item"><img src="images/stock/03.webp" alt="03.webp" class="stock__image"></div>
+                    <div class="stock__item"><img src="images/stock/04.webp" alt="04.webp" class="stock__image"></div>
+                    <div class="stock__item"><img src="images/stock/05.webp" alt="05.webp" class="stock__image"></div>
+                    <div class="stock__item"><img src="images/stock/06.webp" alt="06.webp" class="stock__image"></div>
+                    <div class="stock__item"><img src="images/stock/07.webp" alt="07.webp" class="stock__image"></div>
+                    <div class="stock__item"><img src="images/stock/08.webp" alt="08.webp" class="stock__image"></div>
+                    <div class="stock__item"><img src="images/stock/09.webp" alt="09.webp" class="stock__image"></div>
+                    <div class="stock__item"><img src="images/stock/10.webp" alt="10.webp" class="stock__image"></div>
+                    <div class="stock__item"><img src="images/stock/11.webp" alt="11.webp" class="stock__image"></div>
+                    <div class="stock__item"><img src="images/stock/12.webp" alt="12.webp" class="stock__image"></div>
+                    <div class="stock__item"><img src="images/stock/13.webp" alt="13.webp" class="stock__image"></div>
+                </div>
+            </div>
+        </div>
+        <div class="video">
+            <div class="container">
+                <h2 class="video__title title">Вы можете посмотреть что происходит у нас!</h2>
+                <iframe class="video__iframe" src="https://www.youtube.com/embed/vLrqkm6xkAs" allowfullscreen></iframe>
+            </div>
+        </div>
     </div>
     <!-- scripts -->
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-3.1.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.inputmask.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
