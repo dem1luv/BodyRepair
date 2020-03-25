@@ -376,7 +376,7 @@ body {
 }
 
 .video {
-
+    padding: 0 0 80px 0;
     &__title {
         margin: 0 0 60px 0;
     }
@@ -405,6 +405,7 @@ body {
 .reviews {
     padding: 80px 0;
     overflow: hidden;
+    background-color: #ebebeb;
     &__title {
         margin: 0 0 60px 0;
     }
@@ -429,7 +430,10 @@ body {
     }
 
     &__image {
+        flex: 0 0 90px;
+        height: 90px;
         margin: 0 20px 0 0;
+        border-radius: 50%;
     }
 
     &__content {
@@ -628,5 +632,155 @@ body {
         color: #d91233 !important;
         font-size: 16px;
         text-decoration: underline;
+    }
+}
+
+/* fancybox popups */
+.fancybox-close-small {
+    display: none;
+}
+.popup {
+    display: none;
+    overflow: visible;
+    text-align: center;
+    padding: 40px 50px;
+    &__title {
+        font-weight: 700;
+        margin: 0 0 6px 0;
+    }
+
+    &__text {
+        font-size: 12px;
+    }
+
+    &__close {
+        position: absolute;
+        top: 0;
+        right: -32px;
+        width: 22px;
+        height: 22px;
+        background: url("../images/!popup/close.png") 50% 50% no-repeat;
+        opacity: 1;
+        transition: opacity .25s ease;
+        &:hover {
+            opacity: 0.5;
+        }
+        @media(max-width: 424px) {
+            right: 10px;
+            top: 10px;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__input {
+        margin: 0 0 10px 0;
+        border: 1px solid #d0d0d0;
+        height: 40px;
+    }
+
+    &__input-name {
+        padding: 0 42px 0 15px;
+        background: url("../images/!popup/01.png") calc(100% - 15px) 50% no-repeat;
+    }
+
+    &__input-tel {
+        padding: 0 44px 0 15px;
+        background: url("../images/!popup/02.png") calc(100% - 15px) 50% no-repeat;
+    }
+
+    &__input-email {
+        padding: 0 45px 0 15px;
+        background: url("../images/!popup/03.png") calc(100% - 15px) 50% no-repeat;
+    }
+
+    &__submit {
+        margin: 5px 0 0 0;
+        width: 100%;
+        font-size: 16px !important;
+        min-height: 45px;
+    }
+}
+.popup-thanks {
+    .popup {
+
+		&__title {
+		}
+
+		&__text {
+		}
+
+		&__form {
+		}
+
+		&__input {
+		}
+
+        &__input-name {
+        }
+
+		&__input-email {
+		}
+
+		&__input-tel {
+		}
+
+		&__submit {
+		}
+    }
+}
+.popup-back-call {
+    .popup {
+
+		&__title {
+		}
+
+		&__text {
+            margin: 0 0 18px 0;
+		}
+
+		&__form {
+		}
+
+		&__input {
+		}
+
+		&__input-email {
+		}
+
+		&__input-tel {
+		}
+
+		&__submit {
+		}
+    }
+}
+.popup-fast-back-call {
+    .popup {
+
+		&__title {
+		}
+
+		&__text {
+            margin: 0 0 18px 0;
+		}
+
+		&__form {
+		}
+
+		&__input {
+		}
+
+		&__input-email {
+		}
+
+		&__input-tel {
+		}
+
+		&__submit {
+		}
     }
 }

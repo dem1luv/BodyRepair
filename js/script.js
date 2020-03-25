@@ -14,9 +14,29 @@ $(document).ready(function(){
 	}
 });
 
+$(document).ready(function () {
+	$(".request__form,.consult__form,.popup__form").submit(function () {
+		$.ajax({
+			type: "POST",
+			url: 'feedback.php',
+			data: $(this).serialize(),
+			success: function (data) {
+				// when success
+			},
+			error: function (jqXHR, text, error) {
+				// when error
+			}
+		});
+	$.fancybox.close($("#popup-back-call,#popup-fast-back-call"));
+	$.fancybox.open($("#popup-thanks"));
+	return false;
+	});
+});
+
+
 // maskedinput
 $(document).ready(function(){
-	$(".request__input-tel,.consult__input-tel").inputmask({"mask": "+7 (999) 999-99-99"})
+	$(".request__input-tel,.consult__input-tel,.popup__input-tel").inputmask({"mask": "+7 (999) 999-99-99"})
 });
 
 /*
