@@ -16,7 +16,7 @@ $(document).ready(function(){
 
 // maskedinput
 $(document).ready(function(){
-	$(".request__input-tel").inputmask({"mask": "+7 (999) 999-99-99"})
+	$(".request__input-tel,.consult__input-tel").inputmask({"mask": "+7 (999) 999-99-99"})
 });
 
 /*

@@ -260,7 +260,7 @@ body {
 
     &__form {
         border: 5px solid #ffffff;
-        padding: 35px;
+        padding: 30px;
         display: flex;
         @media(max-width: 767px) {
             flex-direction: column;
@@ -401,3 +401,131 @@ body {
         }
     }
 }
+
+.reviews {
+    padding: 80px 0;
+    overflow: hidden;
+    &__title {
+        margin: 0 0 60px 0;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -22px -28px;
+        @media(max-width: 699px) {
+            margin: -22px 0;
+        }
+    }
+
+    &__item {
+        flex: 1 0 calc(50% - 56px);
+        margin: 22px 28px;
+        display: flex;
+        @media(max-width: 699px) {
+            flex: 1 0 100%;
+            margin: 22px 0;
+        }
+    }
+
+    &__image {
+        margin: 0 20px 0 0;
+    }
+
+    &__content {
+        font-weight: 700;
+    }
+
+    &__name {
+        font-size: 12px;
+        color: #757575;
+        margin: 0 0 8px 0;
+    }
+
+    &__title-review {
+        font-size: 16px;
+        color: #d91233;
+        margin: 0 0 13px 0;
+    }
+
+    &__text {
+        font-size: 13px;
+        color: #2b2b2b;
+    }
+}
+
+.consult {
+    padding: 80px 0;
+    background-color: #dbdbdb;
+    &__title {
+        margin: 0 0 21px 0;
+    }
+
+    &__subtitle {
+        margin: 0 0 60px 0;
+    }
+
+    &__form {
+        padding: 55px;
+        border: 5px solid #ffffff;
+        max-width: 740px;
+        margin: 0 auto;
+        @media(max-width: 767px) {
+            padding: 25px;
+        }
+    }
+
+    &__row {
+        margin: 0 0 40px 0;
+        display: flex;
+        justify-content: center;
+        &:last-child {
+            margin: 0;
+        }
+        @media(max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+
+    &__col {
+        width: 100%;
+        &:first-child {
+            margin: 0 20px 0 0;
+            @media(max-width: 767px) {
+                margin: 0 0 20px 0;
+            }
+        }
+        &:last-child {
+            margin: 0 0 0 20px;
+            @media(max-width: 767px) {
+                margin: 0;
+            }
+        }
+    }
+
+    &__name {
+        font-size: 13px;
+        color: #3b3b3b;
+        margin: 0 0 10px 0;
+    }
+
+    &__input {
+        width: 100%;
+        height: 45px;
+        padding: 0 17px;
+    }
+
+    &__input-tel {
+        &::placeholder {
+            color: black;
+        }
+    }
+
+    &__submit {
+        width: 300px;
+        @media(max-width: 767px) {
+            width: 100%;
+        }
+    }
+}
+
