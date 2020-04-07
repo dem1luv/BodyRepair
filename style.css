@@ -80,14 +80,16 @@ h1, h2, h3, h4, h5, h6 {
 /*------------------*/
 @font-face {
   font-family: 'Lato';
-  src: url("../fonts/Lato/latoregular.woff2") format("woff2"), url("../fonts/Lato/latoregular.woff") format("woff"), url("../fonts/Lato/latoregular.ttf") format("truetype");
+  font-display: swap;
+  src: url("fonts/Lato/latoregular.woff2") format("woff2"), url("fonts/Lato/latoregular.woff") format("woff"), url("fonts/Lato/latoregular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Lato';
-  src: url("../fonts/Lato/latobold.woff2") format("woff2"), url("../fonts/Lato/latobold.woff") format("woff"), url("../fonts/Lato/latobold.ttf") format("truetype");
+  font-display: swap;
+  src: url("fonts/Lato/latobold.woff2") format("woff2"), url("fonts/Lato/latobold.woff") format("woff"), url("fonts/Lato/latobold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
@@ -95,11 +97,14 @@ h1, h2, h3, h4, h5, h6 {
 /* common styles */
 body {
   overflow-x: hidden;
-  font-family: Lato;
 }
 
 body.lock {
   overflow-y: hidden;
+}
+
+.wrapper {
+  font-family: Lato;
 }
 
 .container {
@@ -170,14 +175,13 @@ body.lock {
 }
 
 /* ------------- */
-.home {
-  background: url("../images/home/bg.webp") 50% 50%/cover no-repeat;
-}
-
 .header {
   background: -webkit-gradient(linear, left top, left bottom, from(#1e1e1e70), to(rgba(30, 30, 30, 0)));
   background: linear-gradient(to bottom, #1e1e1e70 0%, rgba(30, 30, 30, 0) 100%);
   height: 150px;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .header .container {
@@ -237,12 +241,13 @@ body.lock {
   text-decoration: underline;
 }
 
-.main {
-  padding: 30px 0 87px 0;
+.home {
+  background: url("images/home/bg.webp") 50% 50%/cover no-repeat;
+  padding: 180px 0 87px 0;
   color: #ffffff;
 }
 
-.main__title {
+.home__title {
   font-size: 48px;
   font-weight: 700;
   text-transform: uppercase;
@@ -251,18 +256,18 @@ body.lock {
 }
 
 @media (max-width: 576px) {
-  .main__title {
+  .home__title {
     font-size: 42px;
   }
 }
 
-.main__subtitle {
+.home__subtitle {
   font-size: 30px;
   text-align: center;
   margin: 0 0 100px 0;
 }
 
-.main__pluses {
+.home__pluses {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -274,7 +279,7 @@ body.lock {
 }
 
 @media (max-width: 534px) {
-  .main__pluses {
+  .home__pluses {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
@@ -284,7 +289,7 @@ body.lock {
   }
 }
 
-.main__plus {
+.home__plus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -299,12 +304,12 @@ body.lock {
 }
 
 @media (max-width: 534px) {
-  .main__plus {
+  .home__plus {
     margin: 20px;
   }
 }
 
-.main__plus-image {
+.home__plus-image {
   width: 64px;
   height: 64px;
   display: -webkit-box;
@@ -319,13 +324,13 @@ body.lock {
   margin: 0 0 27px 0;
 }
 
-.main__plus-text {
+.home__plus-text {
   max-width: 164px;
   font-size: 18px;
   text-align: center;
 }
 
-.main__requests {
+.home__requests {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -337,7 +342,7 @@ body.lock {
 }
 
 @media (max-width: 529px) {
-  .main__requests {
+  .home__requests {
     margin: -20px auto;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -345,23 +350,23 @@ body.lock {
 }
 
 @media (max-width: 529px) {
-  .main__request {
+  .home__request {
     width: 100%;
     margin: 20px;
   }
 }
 
-.main__request-button {
+.home__request-button {
   margin: 0 0 20px 0;
 }
 
 @media (max-width: 529px) {
-  .main__request-button {
+  .home__request-button {
     width: 100%;
   }
 }
 
-.main__request-text {
+.home__request-text {
   max-width: 160px;
   text-align: center;
   margin: 0 auto;
@@ -369,7 +374,7 @@ body.lock {
 }
 
 @media (max-width: 529px) {
-  .main__request-text {
+  .home__request-text {
     max-width: 100%;
   }
 }
@@ -1075,6 +1080,7 @@ body.lock {
 }
 
 .popup {
+  font-family: Lato;
   display: none;
   overflow: visible;
   text-align: center;
@@ -1096,7 +1102,7 @@ body.lock {
   right: -32px;
   width: 22px;
   height: 22px;
-  background: url("../images/!popup/close.png") 50% 50% no-repeat;
+  background: url("images/!popup/close.png") 50% 50% no-repeat;
   opacity: 1;
   -webkit-transition: opacity .25s ease;
   transition: opacity .25s ease;
@@ -1131,17 +1137,17 @@ body.lock {
 
 .popup__input-name {
   padding: 0 42px 0 15px;
-  background: url("../images/!popup/01.png") calc(100% - 15px) 50% no-repeat;
+  background: url("images/!popup/01.png") calc(100% - 15px) 50% no-repeat;
 }
 
 .popup__input-tel {
   padding: 0 44px 0 15px;
-  background: url("../images/!popup/02.png") calc(100% - 15px) 50% no-repeat;
+  background: url("images/!popup/02.png") calc(100% - 15px) 50% no-repeat;
 }
 
 .popup__input-email {
   padding: 0 45px 0 15px;
-  background: url("../images/!popup/03.png") calc(100% - 15px) 50% no-repeat;
+  background: url("images/!popup/03.png") calc(100% - 15px) 50% no-repeat;
 }
 
 .popup__submit {
